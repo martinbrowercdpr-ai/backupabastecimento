@@ -1,0 +1,6 @@
+{
+  "name": "Controle de Abastecimento de Frota",
+  "description": "Sistema de controle e monitoramento de consumo de combustível da frota de veículos conforme formulário de abastecimento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

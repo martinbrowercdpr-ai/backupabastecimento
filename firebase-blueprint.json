@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "sheets": {
+      "title": "Daily Fuel Sheets",
+      "description": "Daily fuel control sheets with fueling entries",
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "aberturaTanque": { "type": "number" },
+        "fechamentoTanque": { "type": "number" },
+        "recebimentoTanque": { "type": "number" },
+        "entries": { "type": "array" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "date"]
+    },
+    "vehicles": {
+      "title": "Vehicles",
+      "description": "Registered fleet vehicles",
+      "properties": {
+        "placa": { "type": "string" },
+        "ultimoHodometro": { "type": "number" },
+        "ultimoHorimetro": { "type": "number" },
+        "proprietario": { "type": "string" }
+      },
+      "required": ["placa"]
+    },
+    "drivers": {
+      "title": "Drivers",
+      "description": "Registered drivers",
+      "properties": {
+        "id": { "type": "string" },
+        "nome": { "type": "string" },
+        "matricula": { "type": "string" }
+      },
+      "required": ["id", "nome"]
+    },
+    "attendants": {
+      "title": "Attendants",
+      "description": "Registered attendants",
+      "properties": {
+        "id": { "type": "string" },
+        "nome": { "type": "string" },
+        "turno": { "type": "string" }
+      },
+      "required": ["id", "nome"]
+    },
+    "routes": {
+      "title": "Routes",
+      "description": "Registered routes",
+      "properties": {
+        "id": { "type": "string" },
+        "codigo": { "type": "string" },
+        "nome": { "type": "string" }
+      },
+      "required": ["id", "nome"]
+    }
+  }
+}
